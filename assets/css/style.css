@@ -1,0 +1,32 @@
+body{
+    color: white;
+    background-color: black;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+header{
+    max-height: 30% !important;
+}
+
+.carousel-inner{
+    max-height: 30% !important;
+}
+
+.navbar-dark{
+    text-shadow: 2px 2px 8px #000000 !important;
+}
+
+hr{
+    background-color: #0B5F6B !important;
+    width: 55%;
+    height: 2px;
+}
+
+.bg-cyan{
+    background-color: #17A3B8;
+    color: white ;
+}
+
+p {
+    font-weight: 300;
+}
