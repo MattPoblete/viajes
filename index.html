@@ -21,13 +21,13 @@
   <body>
       <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" id="navbar">
-        <a class="navbar-brand" href="#"><img src="assets/img/viajes.svg" alt="icon" height="28px"> Viajes Chile</a>
+        <a class="navbar-brand" href="#home"><img src="assets/img/viajes.svg" alt="icon" height="28px" class="my-auto"> Viajes Chile</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -47,13 +47,13 @@
         <div id="carouselheader" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="assets/img/carousel1.jpg" class="d-block w-100 " alt="Alpacas">
+                <img src="assets/img/carousel1.jpg" class="d-block w-100 img-fluid" alt="Alpacas">
               </div>
               <div class="carousel-item">
-                <img src="assets/img/carousel2.jpg" class="d-block w-100 " alt="Moais">
+                <img src="assets/img/carousel2.jpg" class="d-block w-100 img-fluid" alt="Moais">
               </div>
               <div class="carousel-item">
-                <img src="assets/img/carousel3.jpg" class="d-block w-100 " alt="Pinguino">
+                <img src="assets/img/carousel3.jpg" class="d-block w-100 img-fluid" alt="Pinguino">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselheader" role="button" data-slide="prev">
@@ -130,38 +130,91 @@
         <h3>Destacados</h3>
         <hr>
         <div class="card-deck py-3 my-3">
-            <div class="card bg-cyan">
-              <img src="assets/img/card1.jpg" class="card-img-top w-100" alt="...">
+            <div class="card bg-cyan" >
+              <img src="assets/img/card1.jpg" class="card-img-top w-100" alt="img-card-1">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus pretium gravida habitasse neque, pharetra in eros lobortis ultricies maecenas penatibus morbi facilisis luctus class.</p>
-                
+                <button type="button" class="btn btn-outline-light" id="btn-card1">Más info...</button>
               </div>
             </div>
-            <div class="card bg-cyan">
-              <img src="assets/img/card2.jpg" class="card-img-top w-100" style="max-height: 39%;"  alt="...">
+            <div class="card bg-cyan" >
+              <img src="assets/img/card2.jpg" class="card-img-top w-100" style="max-height: 35%;"  alt="img-card-2">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus pretium gravida habitasse neque, pharetra in eros lobortis ultricies maecenas penatibus morbi facilisis luctus class.</p>
-                
+                <button type="button" class="btn btn-outline-light" id="btn-card2">Más info...</button>
               </div>
             </div>
-            <div class="card bg-cyan">
-              <img src="assets/img/card3.jpg" class="card-img-top w-100" alt="...">
+            <div class="card bg-cyan" >
+              <img src="assets/img/card3.jpg" class="card-img-top w-100" alt="img-card-3">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus pretium gravida habitasse neque, pharetra in eros lobortis ultricies maecenas penatibus morbi facilisis luctus class.</p>
-                
+                <button type="button" class="btn btn-outline-light" id="btn-card3">Más info...</button>
               </div>
             </div>
             <div class="card bg-cyan">
-                <img src="assets/img/card4.jpg" class="card-img-top w-100" alt="...">
+                <img src="assets/img/card4.jpg" class="card-img-top w-100" alt="img-card-4">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus pretium gravida habitasse neque, pharetra in eros lobortis ultricies maecenas penatibus morbi facilisis luctus class.</p>
-                  
+                  <button type="button" class="btn btn-outline-light" id="btn-card4">Más info...</button>
                 </div>
               </div>
+          </div>
+          <!-- Modals -->
+          <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-cyan">
+                <div class="modal-body">
+                    <img src="assets/img/card1.jpg" class="img-fluid w-100 rounded" alt="img-modal-1">
+                    <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus pretium gravida habitasse neque, pharetra in eros lobortis ultricies maecenas penatibus morbi facilisis luctus class.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-light" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-cyan">
+                <div class="modal-body">
+                    <img src="assets/img/card2.jpg" class="img-fluid w-100 rounded" alt="img-modal-1">
+                    <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus pretium gravida habitasse neque, pharetra in eros lobortis ultricies maecenas penatibus morbi facilisis luctus class.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-light" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-cyan">
+                <div class="modal-body">
+                    <img src="assets/img/card3.jpg" class="img-fluid w-100 rounded" alt="img-modal-1">
+                    <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus pretium gravida habitasse neque, pharetra in eros lobortis ultricies maecenas penatibus morbi facilisis luctus class.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-light" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-cyan">
+                <div class="modal-body">
+                    <img src="assets/img/card4.jpg" class="img-fluid w-100 rounded" alt="img-modal-1">
+                    <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus pretium gravida habitasse neque, pharetra in eros lobortis ultricies maecenas penatibus morbi facilisis luctus class.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-light" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
           </div>
     </section>
 
